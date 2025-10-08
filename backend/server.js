@@ -33,7 +33,7 @@ app.get("/agy", (req,res) =>
   
       })
 })
-//kiírja, hogy a szobák mennyire vannak kihasználva és hány vendég hány éjszakát töltöttek el a szobában
+//kiírja, hogy a szobák mennyire vannak kihasználva és hány vendég hány éjszakát töltött el a szobában
 app.get("/kihasz", (req,res)=>{
   const sql = "SELECT COUNT(foglalasok.vendeg) AS vendégek, SUM(DATEDIFF(foglalasok.tav, foglalasok.erk)) AS vendégéjszakák FROM foglalasok INNER JOIN szobak ON foglalasok.szoba = szobak.szazon GROUP BY szobak.sznev";
   db.query(sql, (err, result) =>{
@@ -43,7 +43,7 @@ app.get("/kihasz", (req,res)=>{
   })
 })
 
-//kiírja, hogy mi a foglaló neve és mettől-meddig fooglalta le a szobát.
+//kiírja, hogy mi a foglaló neve és mettől-meddig foglalta le a szobát.
 app.get("/foglalas", (req,res)=>{
   const sql = "SELECT vendegek.vnev AS nev, DATE_FORMAT(foglalasok.erk, '%Y-%m-%d') AS erkezes, DATE_FORMAT(foglalasok.tav, '%Y-%m-%d') AS tavozas FROM foglalasok INNER JOIN vendegek ON foglalasok.vendeg = vendegek.vsorsz ORDER BY vendegek.vnev ASC" ;
   db.query(sql, (err, result) =>{
