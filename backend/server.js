@@ -28,7 +28,7 @@ app.get("/agy", (req,res) =>
   {
       const sql = "select sznev, agy from `szobak`    ";
       db.query(sql, (err, result) =>{
-          if(err) return res.json(err); //hiba üzenet
+          if(err) return res.json(err); //hiba üzenet visszaadása
           return res.json(result)
   
       })
