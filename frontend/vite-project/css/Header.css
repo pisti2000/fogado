@@ -1,0 +1,12 @@
+.crop-container {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .crop-container img {
+    position: relative;
+    top: -200px;
+    width: 100%;
+    display: block;
+  }

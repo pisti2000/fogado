@@ -1,0 +1,35 @@
+.info-section {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
+.info-section h2 {
+  color: #333;
+}
+
+.info-section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.info-section ul li {
+  margin-bottom: 10px;
+}
+
+
+.bg-green-section {
+  background-color: #BBD58E;
+}
+.striped-table tbody tr:nth-child(even) {
+  background-color: #679267;
+}
+
+.striped-table thead {
+  background-color: #679267;
+}
