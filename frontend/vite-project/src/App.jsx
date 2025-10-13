@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Foglalas from './components/Foglalas'
-import Info from './components/Info'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
+import Foglalas from '../components/Foglalas.jsx'
+import Info from '../components/Info.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

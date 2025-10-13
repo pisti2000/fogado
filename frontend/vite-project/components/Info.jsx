@@ -1,5 +1,5 @@
 import '../css/Info.css';
-import Roomlist from './Roomlist';
+import Szoba from './Szoba.jsx';
 import {Container, Row, Col} from 'react-bootstrap';  
 import logo from '../img/logo.png';
 import ketagyas from '../img/ketagyas.jpg';
@@ -36,7 +36,7 @@ function Info() {
      
       <Col md={4}  className='bg-green-section'>
       
-      <Roomlist />
+      <Szoba />
       <ul>
         <li>Ruhásszekrény</li>
         <li>Saját fürdőszoba zuhanytálcával</li>
